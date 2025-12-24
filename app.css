@@ -1,0 +1,203 @@
+/* =========================================================
+   Global Page Layout
+   - Sets base font, background, and spacing
+   ========================================================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* =========================================================
+   Task Input Form
+   - Card-style layout for task creation/editing
+   ========================================================= */
+form {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   Form Controls
+   - Consistent input, textarea, and select styling
+   ========================================================= */
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  border: 1px solid #cfd6dd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form select {
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   Buttons
+   - Base button styling and interaction feedback
+   ========================================================= */
+button {
+  border: 1px solid #cfd6dd;
+  border-radius: 6px;
+  background: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: transform 0.05s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   Accessibility
+   - Clear focus indicators for keyboard users
+   ========================================================= */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(2, 117, 216, 0.25);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   Filter Controls
+   ========================================================= */
+.filter-area {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.filter-btn {
+  padding: 8px 12px;
+}
+
+.filter-btn.active {
+  background-color: #0275d8;
+  border-color: #0275d8;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   Stats Bar
+   - Displays task counts and completion info
+   ========================================================= */
+.stats-bar {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+/* =========================================================
+   Task List Layout
+   ========================================================= */
+#taskList {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#taskList li {
+  background: #ffffff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+
+/* =========================================================
+   Task States
+   ========================================================= */
+.completed {
+  opacity: 0.55;
+  text-decoration: line-through;
+}
+
+.overdue {
+  border-left: 6px solid #d9534f;
+  background-color: #fdecea;
+}
+
+.due-today {
+  border-left: 4px solid #f0ad4e;
+  background-color: #fff4e5;
+}
+
+
+/* =========================================================
+   Priority Indicators
+   ========================================================= */
+.p1,
+.p2 {
+  border-left: 2px solid #6c757d;
+}
+
+.p3 {
+  border-left: 3px solid #5bc0de;
+}
+
+.p4,
+.p5 {
+  border-left: 5px solid #0275d8;
+}
+
+
+/* =========================================================
+   Task Action Buttons
+   ========================================================= */
+.btn {
+  padding: 8px 10px;
+  margin-right: 8px;
+}
+
+.btn-edit {
+  border-color: #5bc0de;
+}
+
+.btn-delete {
+  border-color: #d9534f;
+}
