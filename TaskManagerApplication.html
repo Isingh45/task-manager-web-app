@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Task Manager App</title>
+
+    <!-- External CSS for layout and styling -->
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <body>
+    <!-- App title -->
+    <h1>Manage Your Tasks</h1>
+
+    <!-- Task input form -->
+    <form id="taskForm">
+      <!-- Task title input -->
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="user_title" required>
+      <br>
+
+      <!-- Task description input -->
+      <label for="description">Description:</label>
+      <textarea id="description" name="user_description" required></textarea>
+      <br>
+
+      <br>
+
+      <!-- Deadline input -->
+      <label for="deadline">Deadline:</label>
+      <input type="date" id="deadline" name="user_deadline" required>
+
+      <br>
+
+      <!-- Priority input (1 = lowest, 5 = highest) -->
+      <label for="priority">Priority:</label>
+      <select id="priority" required>
+        <option value="1">Low</option>
+        <option value="3">Medium</option>
+        <option value="5">High</option>
+      </select>
+      <br>
+
+      <!-- Submit button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <!-- Task list rendered dynamically by JavaScript -->
+    <ul id="taskList"></ul>
+
+    <!-- Optional message / notification area -->
+    <p id="result"></p>
+
+    <!-- Main JavaScript file -->
+    <script src="app.js" ></script>
+  </body>
+</html>
