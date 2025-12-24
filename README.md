@@ -7,7 +7,7 @@ A browser-based task management application built with HTML, CSS, and vanilla Ja
 - Add, edit, and delete tasks (CRUD)
 - Mark tasks as completed using a checkbox
 - Filter tasks by status: All / Completed / Incomplete
-- Filter tasks by priority: All / 1–5
+- Filter tasks by priority: Low / Medium / High
 - Automatic task sorting:
   - Incomplete tasks first
   - Earlier deadlines first
