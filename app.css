@@ -1,3 +1,7 @@
+
+
+
+
 /* =========================================================
    Base / Global
    ========================================================= */
@@ -218,4 +222,27 @@ select:focus-visible {
 
 .btn-delete {
   border-color: #d9534f;
+}
+
+/* =========================================================
+   Form Layout Corrections
+   ========================================================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label {
+  margin-top: 0 !important;
+  font-weight: 600;
+  font-size: 13px;
+  color: #333;
 }
