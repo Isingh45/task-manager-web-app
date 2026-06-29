@@ -3,15 +3,23 @@
 ## Overview
 A browser-based task management application built with HTML, CSS, and vanilla JavaScript. The app allows users to create tasks with deadlines and priorities, mark tasks as completed, and manage tasks using filtering, sorting, and persistent storage. The underlying execution engine is built using a lightweight, framework-free architecture that emphasizes simplicity, maintainability, and efficient client-side execution.
 
+
 ## Features
-* **Add, Edit, and Delete Tasks (CRUD): Supports complete task lifecycle management, allowing users to create, update, and remove tasks while maintaining a synchronized application state.
-* **Mark Tasks as Completed:** Direct state mutation via checkbox inputs, serving as the system's operational switch.
-* **Filter Tasks by Status:** Real-time array filtering to isolate records by their status indices (All / Completed / Incomplete).
-* **Filter Tasks by Priority:** Dynamic matrix filtering sorting entries by specific urgency weights (Low / Medium / High).
-* **Automatic Task Sorting:** A deterministic multi-tiered sorting routine evaluating three operational constraint layers simultaneously: Incomplete tasks first -> Earlier deadlines chronologically -> Higher priority metrics first.
-* **Visual Indicators for Overdue/Due Today:** Time-critical date-parsing helper logic that cross-references the client system clock to dynamically update UI style classes for temporal state transitions.
-* **Telemetry Statistics Bar:** A continuous live calculation array displaying system-wide telemetry: total registered tasks, filtered visible nodes, and full completion counts.
-* **Persistent Storage: Serializes application data into JSON and stores it using the browser's localStorage API, allowing tasks to persist across page refreshes and browser sessions.
+- **Add, Edit, and Delete Tasks (CRUD):** Supports complete task lifecycle management, allowing users to create, update, and remove tasks while maintaining a synchronized application state.
+
+- **Mark Tasks as Completed:** Direct state mutation via checkbox inputs, serving as the system's operational switch.
+
+- **Filter Tasks by Status:** Real-time array filtering to isolate records by their status indices (All / Completed / Incomplete).
+
+- **Filter Tasks by Priority:** Dynamic matrix filtering sorting entries by specific urgency weights (Low / Medium / High).
+
+- **Automatic Task Sorting:** A deterministic multi-tiered sorting routine evaluating three operational constraint layers simultaneously: Incomplete tasks first → Earlier deadlines chronologically → Higher priority metrics first.
+
+- **Visual Indicators for Overdue/Due Today:** Time-critical date-parsing helper logic that cross-references the client system clock to dynamically update UI style classes for temporal state transitions.
+
+- **Telemetry Statistics Bar:** A continuous live calculation array displaying system-wide telemetry: total registered tasks, filtered visible nodes, and full completion counts.
+
+- **Persistent Storage:** Serializes application data into JSON and stores it using the browser's localStorage API, allowing tasks to persist across page refreshes and browser sessions.
 
 ## Technologies Used
 * **HTML5:** Semantic DOM element layouts and clean structural form groupings.
