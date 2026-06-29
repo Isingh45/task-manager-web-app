@@ -5,7 +5,7 @@ A browser-based task management application built with HTML, CSS, and vanilla Ja
 
 
 ## Features
-- **Add, Edit, and Delete Tasks (CRUD):** Supports complete task lifecycle management, allowing users to create, update, and remove tasks while maintaining a synchronized application state.
+- Add, Edit, and Delete Tasks (CRUD):** Supports complete task lifecycle management, allowing users to create, update, and remove tasks while maintaining a synchronized application state.
 
 - **Mark Tasks as Completed:** Direct state mutation via checkbox inputs, serving as the system's operational switch.
 
@@ -17,7 +17,7 @@ A browser-based task management application built with HTML, CSS, and vanilla Ja
 
 - **Visual Indicators for Overdue/Due Today:** Time-critical date-parsing helper logic that cross-references the client system clock to dynamically update UI style classes for temporal state transitions.
 
-- **Telemetry Statistics Bar:** A continuous live calculation array displaying system-wide telemetry: total registered tasks, filtered visible nodes, and full completion counts.
+- Telemetry Statistics Bar:** A continuous live calculation array displaying system-wide telemetry: total registered tasks, filtered visible nodes, and full completion counts.
 
 - **Persistent Storage:** Serializes application data into JSON and stores it using the browser's localStorage API, allowing tasks to persist across page refreshes and browser sessions.
 
